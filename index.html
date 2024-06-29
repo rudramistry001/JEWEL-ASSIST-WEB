@@ -1,57 +1,219 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In/Sign Up Form</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard | Bootstrap | Chandni</title>
 </head>
+
 <body>
-    <div class="cont">
-        <div class="form sign-in">
-            <h2>Welcome</h2>
-            <label>
-                <span>Email</span>
-                <input type="email" />
-            </label>
-            <label>
-                <span>Password</span>
-                <input type="password" />
-            </label>
-            <p class="forgot-pass">Forgot password?</p>
-            <button type="button" class="submit">Sign In</button>
-        </div>
-        <div class="sub-cont">
-            <div class="img">
-                <div class="img__text m--up">
-                    <h3>Don't have an account? Please Sign up!</h3>
-                </div>
-                <div class="img__text m--in">
-                    <h3>If you already have an account, just sign in.</h3>
-                </div>
-                <div class="img__btn">
-                    <span class="m--up">Sign Up</span>
-                    <span class="m--in">Sign In</span>
-                </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-12 col-12 dashboard-menu">
+                <div class="logo">LOGO NAME</div>
+                <ul class="list-group">
+                    <li class="list-group-item active">
+                        <a href=""><i class="fa fa-dashboard"></i>Dashboard</a>
+                    </li>
+                    <li class="list-group-item list-group-item-action">
+                        <a href=""><i class="fa fa-envelope-o"></i>Messages</a>
+                    </li>
+                    <li class="list-group-item list-group-item-action">
+                        <a href=""><i class="fa fa-user"></i>Calendar</a>
+                    </li>
+                    <li class="list-group-item list-group-item-action">
+                        <a href=""><i class="fa fa-play"></i>Camoigns</a>
+                    </li>
+                    <li class="list-group-item list-group-item-action">
+                        <a href=""><i class="fa fa-calendar"></i>Calendar</a>
+                    </li>
+                    <li class="list-group-item list-group-item-action">
+                        <a href=""><i class="fa fa-desktop"></i>Content</a>
+                    </li>
+                    <li class="list-group-item list-group-item-action">
+                        <a href=""><i class="fa fa-video-camera"></i>Videos</a>
+                    </li>
+                    <li class="list-group-item list-group-item-action">
+                        <a href=""><i class="fa fa-list-alt"></i>Lists</a>
+                    </li>
+                </ul>
             </div>
-            <div class="form sign-up">
-                <h2>Create your Account</h2>
-                <label>
-                    <span>Name</span>
-                    <input type="text" />
-                </label>
-                <label>
-                    <span>Email</span>
-                    <input type="email" />
-                </label>
-                <label>
-                    <span>Password</span>
-                    <input type="password" />
-                </label>
-                <button type="button" class="submit">Sign Up</button>
+            <div class="col-lg-10 col-md-10 col-sm-12 col-12 bg-light main-content">
+                <div class="row justify-content-between header align-items-center bg-white py-3">
+                    <div class="col-lg-2 col-md-3 col-sm-3 col-6">
+                        <form>
+                            <div class="input-group">
+                                <span class="input-group-text border-white bg-white">
+                                    <i class="fa fa-search"></i>
+                                </span>
+                                <input type="text" class="form-control border-white" placeholder="Search">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                        <ul class="d-flex mb-0 justify-content-between header-ul">
+                            <li><a href="#">
+                                    <i class="fa fa-envelope"></i></a>
+                            </li>
+                            <li><a href="#">
+                                    <i class="fa fa-envelope-open-o"></i></a>
+                            </li>
+                            <li><a href="#">
+                                    <i class="fa fa-cog"></i></a>
+                            </li>
+                            <li><a href="#">
+                                    <i class="fa fa-question-circle-o"></i></a>
+                            </li>
+                            <li><a href="#">
+                                    <i class="fa fa-user-o" aria-hidden="true"> </i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row align-items-center py-4 px-3 notifications gx-3 gy-3">
+                    <div class="col">
+                        Notification
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-5 col-12">
+                        <button type="button"
+                            class="btn w-100 bg-white border border-1 rounded py-3 btn-lg position-relative d-flex justify-content-around align-item-center">
+                            <span class="mt-1 badge rounded-circle bg-danger ">
+                                6</span>
+                            Unreplied Email <i class="fa fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-5 col-12">
+                        <button type="button"
+                            class="btn w-100 bg-white border border-1 rounded py-3 btn-lg position-relative d-flex justify-content-around align-item-center">
+                            <span class="mt-1 badge rounded-circle bg-danger ">
+                                8</span>
+                            Unreplied SMS <i class="fa fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-5 col-12">
+                        <button type="button"
+                            class="btn w-100 border border-1 rounded py-3 bg-white btn-lg position-relative d-flex justify-content-around align-item-center">
+                            <span class="mt-1 badge rounded-circle bg-danger ">
+                                3</span>
+                            Missed Calls<i class="fa fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <div class="col">
+                        Need help? <i class="fa fa-play"></i>
+                    </div>
+                </div>
+                <div class="row detaild-infos p-3 border-top border-bottom">
+                    <div class="col-md-5 col-sm-12 col-12">
+                        <div class="detailed-inner-wrap">
+                            <ul class="nav nav-tabs border-0 ul-tablist align-items-center justify-content-start mb-3"
+                                role="tablist">
+                                <div class="heading">Messages</div>
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-bs-toggle="tab" href="#day">Day</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#week1">Week</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#week2">2 Week</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#month">Month</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content bg-white px-2 tabs-custom">
+                                <div id="day" class="tab-pane active">
+                                    <table class="table table-first">
+                                        <tbody>
+                                            <tr class="p-c">
+                                                <th scope="row"> <i class="fa fa-envelope left-i"></i></a> Emails</th>
+                                                <td>160<small>Sent</small></td>
+                                                <td>59<small>Recieved</small></td>
+                                                <td>6<small>Unread</small></td>
+                                                <td><i class="fa fa-arrow-right right-a"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><i class="fa fa-comment-o left-i"></i>SMS</th>
+                                                <td>680<small>Sent</small></td>
+                                                <td>47<small>Recieved</small></td>
+                                                <td>4<small>Unsend</small></td>
+                                                <td><i class="fa fa-arrow-right right-a"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><i class="fa fa-phone left-i"></i>Calls</th>
+                                                <td>500<small>Sent</small></td>
+                                                <td>60<small>Recieved</small></td>
+                                                <td>22<small>Unsend</small></td>
+                                                <td><i class="fa fa-arrow-right right-a"></i></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-sm-12 col-12">
+                        <ul class="nav nav-tabs ul-tablist align-items-center border-0 mb-3" role="tablist">
+                            <div class="heading">Pipeline</div>
+                            <li class="nav-item pipe-text">
+                                <a class="nav-link  text-primary pipe-text border-0" data-bs-toggle="tab">Full Pipeline
+                                    <i class="fa fa-arrow-right"></i></a>
+                            </li>
+                        </ul>
+                        <table class="table table-second bg-white px-5">
+                            <tbody>
+                                <tr>
+                                    <td><span class="text-primary">●</span> Recived</td>
+                                    <td>
+                                        <p class="nums">3</p>
+                                    </td>
+                                    <td>$3000</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-warning">●</span> Contact</td>
+                                    <td>
+                                        <p class="nums">2</p>
+                                    </td>
+                                    <td>$2000</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-purple">●</span> Appointment</td>
+                                    <td>
+                                        <p class="nums">2</p>
+                                    </td>
+                                    <td>$2000</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-success">●</span> Sold</td>
+                                    <td>
+                                        <p class="nums">1</p>
+                                    </td>
+                                    <td>$1000</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-danger">●</span> Lost</td>
+                                    <td>
+                                        <p class="nums">3</p>
+                                    </td>
+                                    <td class="text-danger">$3000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
